@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Cartoon.Default" MasterPageFile="~/CartoonOfTheDay.Master" %>
 
+<%@ Register Src="~/Controls/NavigationMenu.ascx" TagPrefix="nm" TagName="NavigationMenu" %>
+
+
 <asp:Content ContentPlaceHolderID="head" runat="server">
     <script>
         $(document).ready(function () {
@@ -39,10 +42,46 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="CenterContent" runat="server">
-    
-    
+    <div>
+        <div id="divNav">
+            <nm:NavigationMenu runat="server" id="NavigationMenu" />
+        </div>
+        <div id="CartoonContent">
+            <div id="CartoonSearchStuff"> <!-- Get away from using tables. -->
+                <table>
+                    <tr>
+                        <td rowspan="2">
+                            <button id="btnPrevious" type="button">Previous</button>
+                        </td>
+                        <td>
+                            <textarea id="txtTitle" type="button"><!-- title goes hear --></textarea>
+                        </td>
+                        <td rowspan="2">
+                            <button id="btnNExt" type="button">Next</button>
+                        </td>
+                    </tr>
+                    <td>
+                        <button id="btnCalendar" type="button" >Date</button>
+                    </td>
+                    <tr>
 
+                    </tr>
+                </table>
+            </div>
+            <div id="CartoonItself">
+                <img id="imgCartoon" src="defaultEmptyPicture.png" style="max-height:400px; max-width:400px;" /> <!-- todo  image dynamically pulled from AJAX -->
+            </div>
+        </div>
+        <div id="Share">
+            <!--
+                like : facebook.
+                share: lets people post in on facebook.
+                email: pops up a hyperlink for people to highlight and copy.
+            -->
+        </div>
 
+    </div>
+    <!--
     <div>
         Entry 1: <input type="text" id="txtBxEntry1" /> <br />
         Entry 2: <input type="text" id="txtBxEntry2" /> <br />
@@ -51,4 +90,5 @@
     <div id="AjaxResponse">
 
     </div>
+    -->
 </asp:Content>

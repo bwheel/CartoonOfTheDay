@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Cartoon {
+namespace Cartoon.Controls {
     
     
-    public partial class Default {
+    public partial class NavigationMenu {
         
         /// <summary>
-        /// NavigationMenu control.
+        /// navMenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Cartoon.Controls.NavigationMenu NavigationMenu;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navMenu;
     }
 }

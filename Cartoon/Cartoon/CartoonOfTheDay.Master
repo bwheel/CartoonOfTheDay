@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
     <div>
         <asp:Panel ID="Banner" runat="server" HorizontalAlign="Center" >
-            <img src="http://google.com" title="Banner" />
+            <img src="Images/banner.png" title="Banner" runat="server" height="200" width="800"/>
         </asp:Panel>
         
         <asp:ContentPlaceHolder ID="CenterContent" runat="server"></asp:ContentPlaceHolder>

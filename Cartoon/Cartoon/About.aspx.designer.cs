@@ -10,7 +10,7 @@
 namespace Cartoon {
     
     
-    public partial class Default {
+    public partial class About {
         
         /// <summary>
         /// NavigationMenu control.
