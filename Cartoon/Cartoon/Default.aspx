@@ -4,8 +4,14 @@
 
 
 <asp:Content ContentPlaceHolderID="head" runat="server">
+    <script src="Scripts/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
     <script>
+        $(function() {
+
+            $("#btnNext").button
+        };
         $(document).ready(function () {
+
 
             $("#btnSubmit").click(function () {
 
@@ -57,7 +63,8 @@
                             <textarea id="txtTitle" type="button"><!-- title goes hear --></textarea>
                         </td>
                         <td rowspan="2">
-                            <button id="btnNExt" type="button">Next</button>
+                            
+                            <button id="btnNext" type="button" >Next</button>
                         </td>
                     </tr>
                     <td>
