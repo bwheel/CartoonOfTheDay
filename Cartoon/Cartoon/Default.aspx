@@ -4,12 +4,9 @@
 
 
 <asp:Content ContentPlaceHolderID="head" runat="server">
-    <script src="Scripts/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    
+    <script src="Scripts/jquery-2.1.3.js"></script>
     <script>
-        $(function() {
-
-            $("#btnNext").button
-        };
         $(document).ready(function () {
 
 
@@ -80,11 +77,26 @@
             </div>
         </div>
         <div id="Share">
-            <!--
-                like : facebook.
-                share: lets people post in on facebook.
-                email: pops up a hyperlink for people to highlight and copy.
-            -->
+            <ul>
+                <li>
+                    <p>facebook</p>
+                </li>
+                <li>
+                    <p>Pinterest</p>
+                </li>
+                <li>
+                    <p>Twitter</p>
+                </li>
+                <li>
+                    <p>Linked In</p>
+                </li>
+                <li>
+                    <p>MailTo</p>
+                </li>
+                <li>
+                    <p>URL</p>
+                </li>
+            </ul>
         </div>
 
     </div>
