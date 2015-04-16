@@ -6,6 +6,7 @@
 <asp:Content ContentPlaceHolderID="head" runat="server">
     
     <script src="Scripts/jquery-2.1.3.js"></script>
+    <link href="Scripts/main.css" rel="stylesheet" />
     <script>
         $(document).ready(function () {
 
@@ -42,22 +43,66 @@
         });
 
     </script>
+    <style type="text/css">
+        #txtTitle {
+            margin-bottom: 0px;
+        }
+    </style>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="CenterContent" runat="server">
+    
     <div>
         <div id="divNav">
-            <nm:NavigationMenu runat="server" id="NavigationMenu" />
+            <ul class="navMenu">
+                <li>
+                    <a href="Default.aspx">Home</a>
+                </li>
+                <li>
+                    <a href="Cartoons.aspx">Cartoons</a>
+                </li>
+                <li>
+                    <a href="About.aspx">About</a>
+                </li>
+                <li>
+                    <a href="Contact.aspx">Contact</a>
+                </li>
+            </ul>
         </div>
+
         <div id="CartoonContent">
-            <div id="CartoonSearchStuff"> <!-- Get away from using tables. -->
+            <div id="CartoonSearch"> 
+                <div class="left">
+                    <img id="imgArrowLeft" src="Images/left-arrow.png" />
+                </div>
+                <div class="center">
+                    <table>
+                        <tr>
+                            <td>
+                                Search: <input type="text" id="txtBxSearch" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Calendar: <input type="button" id="btnCalendar" title="Calendar" />
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    
+                </div>
+                <div class="right">
+                    <img id="imgArrowRight2" src="Images/right-arrow.png" />
+
+                </div>
+                <!--
                 <table>
                     <tr>
                         <td rowspan="2">
                             <button id="btnPrevious" type="button">Previous</button>
                         </td>
                         <td>
-                            <textarea id="txtTitle" type="button"><!-- title goes hear --></textarea>
+                            
                         </td>
                         <td rowspan="2">
                             
@@ -67,10 +112,8 @@
                     <td>
                         <button id="btnCalendar" type="button" >Date</button>
                     </td>
-                    <tr>
-
-                    </tr>
-                </table>
+                    </table>
+                -->
             </div>
             <div id="CartoonItself">
                 <img id="imgCartoon" src="defaultEmptyPicture.png" style="max-height:400px; max-width:400px;" /> <!-- todo  image dynamically pulled from AJAX -->

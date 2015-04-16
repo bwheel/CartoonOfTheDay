@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Admin\default.aspx" />
     <Content Include="Cartoons.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Controls\NavigationMenu.ascx" />
@@ -67,6 +68,7 @@
     <Content Include="Images\left-arrow.png" />
     <Content Include="Images\right-arrow.png" />
     <Content Include="Scripts\jquery-2.1.3.js" />
+    <Content Include="Scripts\main.css" />
     <Content Include="Web.config" />
     <Content Include="webServiceCartoon.asmx" />
   </ItemGroup>
@@ -77,6 +79,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

@@ -34,6 +34,10 @@ namespace Cartoon.Controls
             _linkAbout.Text ="About";
             _linkAbout.NavigateUrl ="about.asx";
 
+            ListItem link = new ListItem();
+            
+            
+
             navMenu.Controls.Add(_linkHome);
             navMenu.Controls.Add(_linkCartoons);
             navMenu.Controls.Add(_linkAbout);

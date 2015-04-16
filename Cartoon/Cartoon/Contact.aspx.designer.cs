@@ -10,6 +10,15 @@
 namespace Cartoon {
     
     
-    public partial class Default {
+    public partial class Contact {
+        
+        /// <summary>
+        /// NavigationMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Cartoon.Controls.NavigationMenu NavigationMenu;
     }
 }
