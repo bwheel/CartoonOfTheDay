@@ -1,14 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CartoonOfTheDay.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Cartoon.Contact" %>
-
-<%@ Register Src="~/Controls/NavigationMenu.ascx" TagPrefix="uc1" TagName="NavigationMenu" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Cartoon.Contact"  MasterPageFile="~/CartoonOfTheDay.Master"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="CenterContent" runat="server">
     <div>
-        <div id="divNav">
-            <uc1:NavigationMenu runat="server" ID="NavigationMenu" />
-        </div>
         <div>
             <p>Email:</p>
             <p>Website:</p>

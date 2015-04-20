@@ -1,74 +1,148 @@
-﻿body {
-    width:800px;
-    margin-left:auto;
-    margin-right:auto;
+﻿/*  Master page */
+
+body {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#divNav {
-    width:100%;
-    display:inline-block;
+#content {
+    background-color: lightblue;
+    padding: 1em 1em 1em 1em;
+}
 
+
+#divNav {
+    width: 100%;
+    display: inline-block;
 }
 
 /* Navigation menu*/
 .navMenu {
-    list-style:none;
+    list-style: none;
     margin: 0em;
-    padding:0;
+    padding: 0;
 }
+
     .navMenu li {
-        display:inline;
+        display: inline;
+        float: left;
+        margin-right: 0.2em;
     }
 
-        .navMenu li a {
-            border: 1px solid black;
-            text-align:center;
-            margin: 0 5px;
-            background-color:azure;
+        .navMenu li:first-child {
+            margin-left: 1em;
         }
-            .navMenu li a:hover {
-                background-color:red;
-            }
+
+        .navMenu li:hover {
+            opacity: 0.75;
+        }
+
+        .navMenu li a {
+            padding: 2px 2px 2px 2px;
+            border: 1px solid black;
+            border-radius: 7%;
+            text-align: center;
+            text-decoration: none;
+            background-color: lightgreen;
+        }
+
+#CartoonContent {
+    text-align: center;
+    margin: 10px 5px;
+    border: 2px solid black;
+}
 
 /* Cartoon search widget*/
 #CartoonSearch {
-    height: 150px;
+    height: 1.5em;
     width: 100%;
-    text-align: center;
 }
 
     #CartoonSearch div {
-        border: 2px solid black;
-        display: inline-block;
-    }
-    #CartoonSearch .left {
         float: left;
-        margin-top:0px;
-        margin-left: 0.75em;
-        height: 100%;
-        width: 15%;
     }
 
-
-
-    #CartoonSearch .right {
-        float: right;
-        margin-top:0px;
-        margin-right: 0.75em;
-        height: 100%;
-        width: 15%;
+    #CartoonSearch ul {
+        margin: 0;
+        margin-top: 0.25em;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
     }
 
-    #CartoonSearch .center {
-        margin-top:0px;
-        height: 100%;
-        width: 40%;
+    #CartoonSearch li {
+        display: inline;
+        margin-right: 0.5em;
     }
-       
 
+        #CartoonSearch li:first-child div {
+            margin-left: 1em;
+        }
 
-#CartoonItself {
-    height: 800px;
+        #CartoonSearch li div {
+            display: inline;
+            margin-right: 0.5em;
+        }
+#divPrevious {
+    cursor:pointer;
+}
+#divNext {
+    cursor:pointer;
+}
+/* Cartoon headers */
+#CartoonHeader {
+    height: 1.5em;
     width: 100%;
-    border: 2px solid black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+    #CartoonHeader ul {
+        margin: 0;
+        margin-top: 0.25em;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #CartoonHeader li {
+        display: inline;
+        margin-right: 0.5em;
+    }
+
+        #CartoonHeader li div {
+            display: inline;
+        }
+
+            #CartoonHeader li div p {
+                display: inline;
+            }
+
+#CartoonTitle {
+    float: left;
+    margin-left:1.5em;
+}
+
+    #CartoonTitle p {
+        font-size: x-large;
+    }
+
+#CartoonDate {
+    float:right;
+    margin-right:1.5em;
+}
+
+    #CartoonDate p {
+        font-size: small;
+        font-style: italic;
+    }
+
+
+#CartoonImage {
+    border: 2px solid yellow;
+}
+
+#imgCartoon {  
+    padding: 0.2em 0.2em 0.2em 0.2em;
 }

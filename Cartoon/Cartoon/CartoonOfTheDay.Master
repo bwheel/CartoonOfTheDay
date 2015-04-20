@@ -5,16 +5,33 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Cartoon of the Day - Ron Wheeler</title>
-    
+    <link href="Scripts/main.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:Panel ID="Banner" runat="server" HorizontalAlign="Center" >
-            <img src="Images/banner.png" title="Banner" runat="server" height="200" width="800"/>
-        </asp:Panel>
-        
+    <div id="content">
+        <div >
+            <asp:Panel ID="Banner" runat="server" HorizontalAlign="Center" >
+                <img src="Images/banner.png" title="Banner" runat="server" height="175" width="750"/>
+            </asp:Panel>
+            <div id="divNav">
+                <ul class="navMenu">
+                    <li>
+                        <a href="Default.aspx">Home</a>
+                    </li>
+                    <li>
+                        <a href="Cartoons.aspx">Cartoons</a>
+                    </li>
+                    <li>
+                        <a href="About.aspx">About</a>
+                    </li>
+                    <li>
+                        <a href="Contact.aspx">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <asp:ContentPlaceHolder ID="CenterContent" runat="server"></asp:ContentPlaceHolder>
     </div>
     </form>
