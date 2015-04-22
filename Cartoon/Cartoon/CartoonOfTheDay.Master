@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="utf-8" />
     <title>Cartoon of the Day - Ron Wheeler</title>
     <link href="Scripts/main.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
@@ -33,6 +34,25 @@
             </div>
         </div>
         <asp:ContentPlaceHolder ID="CenterContent" runat="server"></asp:ContentPlaceHolder>
+        <div class="footer">
+            <div class="leftFooter">
+                <ul>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="About.aspx">About</a></li>
+                    <li><a href="Contact.aspx">Contact</a></li>
+                    <li><a href="Cartoons.aspx">Cartoons</a></li>
+                    <li><a href="~/Admin/Default.aspx"</li>
+                </ul>
+            </div>
+            <div class="rightFooter">
+                <ul>
+                    <li><a href="http://www.cartoonworks.com">Cartoonworks</a></li>
+                    <li>Copyright - Cartoonworks 2015</li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#" >Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     </form>
 </body>

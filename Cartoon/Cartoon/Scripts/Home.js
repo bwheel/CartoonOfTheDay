@@ -1,11 +1,6 @@
 ﻿$(document).ready(function () {
-
-    $('#datetimepicker').datetimepicker(
-        {
-            dateFormat: 'yy-mm-dd',
-            dateonly: true,
-            timeFormat: ''
-        });
+    
+    $("#datepicker").datepicker();
 
     $('#divPrevious').click(function (e) {
         alert("left click");

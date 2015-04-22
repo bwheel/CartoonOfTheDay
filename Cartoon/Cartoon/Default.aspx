@@ -5,11 +5,15 @@
 
 <asp:Content ContentPlaceHolderID="head" runat="server">
     
-    <script src="Scripts/jquery-2.1.3.js"></script>
-    <script src="Scripts/Home.js" type="text/javascript"></script>
-    <link href="Scripts/dateTimePicker/jquery.datetimepicker.css" rel="stylesheet" />
-    <script src="Scripts/dateTimePicker/jquery.js"></script>
-    <script src="Scripts/dateTimePicker/jquery.datetimepicker.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
+    
+    <!-- My Javascript-->
+    <script src="Scripts/Home.js"></script>
+    
+
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="CenterContent" runat="server">
@@ -31,10 +35,10 @@
                     <li>
                         <div>
                             <div>
-                                    Search: <input type="text" id="txtBxSearch" />
+                                    Tag Search: <input type="text" id="txtBxSearch" />
                             </div>
                             <div>
-                                    Calendar: <input id="datetimepicker" type="text" />
+                                    Day lookup: <input id="datepicker" type="text" />
                             </div>
                         </div>
                     </li>
@@ -58,35 +62,24 @@
         <div id="Share">
             <ul>
                 <li>
-                    <p>facebook</p>
+                    <a href="https://developers.facebook.com/" >facebook</a>
                 </li>
                 <li>
-                    <p>Pinterest</p>
+                    <a href="https://developers.pinterest.com/">Pinterest</a>
                 </li>
                 <li>
-                    <p>Twitter</p>
+                    <a href="https://dev.twitter.com/">Twitter</a>
                 </li>
                 <li>
-                    <p>Linked In</p>
+                    <a href="https://developer.linkedin.com/">Linked In</a>
                 </li>
                 <li>
-                    <p>MailTo</p>
+                    <a href="http://www.w3schools.com/tags/tag_address.asp">MailTo</a>
                 </li>
                 <li>
-                    <p>URL</p>
+                    <a href="Default.aspx?ImageID=4444444">URL</a>
                 </li>
             </ul>
         </div>
-
     </div>
-    <!--
-    <div>
-        Entry 1: <input type="text" id="txtBxEntry1" /> <br />
-        Entry 2: <input type="text" id="txtBxEntry2" /> <br />
-        <input type="button" id="btnSubmit" value="Post to server for response."/>
-    </div>
-    <div id="AjaxResponse">
-
-    </div>
-    -->
 </asp:Content>

@@ -7,8 +7,8 @@ body {
 }
 
 #content {
+    padding: 1em 1em 1em 1em;    
     background-color: lightblue;
-    padding: 1em 1em 1em 1em;
 }
 
 
@@ -118,7 +118,7 @@ body {
             #CartoonHeader li div p {
                 display: inline;
             }
-
+/* Cartoon info*/
 #CartoonTitle {
     float: left;
     margin-left:1.5em;
@@ -139,6 +139,7 @@ body {
     }
 
 
+    /* Cartoon content*/
 #CartoonImage {
     border: 2px solid yellow;
 }
@@ -146,3 +147,45 @@ body {
 #imgCartoon {  
     padding: 0.2em 0.2em 0.2em 0.2em;
 }
+
+
+/* Share*/
+#Share {
+    margin-left:auto;
+    margin-right:auto;
+}
+    #Share ul {
+        list-style:none;
+    }
+        #Share ul li {
+            display:inline;
+            float:left;
+            margin-right:0.5em;
+
+        }
+            #Share ul li:first-child {
+                margin-left:1em;
+            }
+
+/* Footer*/
+.footer {
+    
+}
+    
+    .footer ul {
+        list-style: none;
+    }
+
+        .footer ul li p {
+
+        }
+        
+    .footer .leftFooter {
+        margin-left:0px;
+        float:left;
+    }
+
+    .footer .rightFooter {
+        float:right;
+        margin-right:2em;
+    }
