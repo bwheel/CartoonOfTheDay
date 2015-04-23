@@ -54,7 +54,6 @@
                     </li>
                 </ul>
             </div>
-
             <div id="CartoonImage">
                 <img id="imgCartoon" src="/Images/Cartoons/B01.png" style="max-height:725px; max-width:725px;" /> <!-- todo  image dynamically pulled from AJAX -->
             </div>

@@ -1,17 +1,37 @@
 ﻿$(document).ready(function () {
     
+    /* 
+        On browser ready...
+        1. Check for Query String in URL.
+        2. Use today's date if no query string.
+        3. Request images(and image properties) via Ajax
+        4. Show loading icon until the stuff arrives.
+        5. Show cartoon images.
+    */
+    
+
     $("#datepicker").datepicker();
 
+    /* On get previous image click
+        1. Check for image in list
+        
+        2a. Display that image
+        3a. If less than 3 left in the list, start Ajax for more images.
+
+        2b. Start Ajax call for more images
+        3b. Display that image.
+
+        3c. If there are no previous images notify user.
+    */
     $('#divPrevious').click(function (e) {
         alert("left click");
     });
-
 
     $('#divNext').click(function (e) {
         alert("right click");
     });
 
-
+    /*test ajax */ 
     $("#btnSubmit").click(function () {
 
         // TODO: I tried to be dynamic and make my JSON, but I ran out of debug patience to figure out how to add it.
