@@ -11,46 +11,49 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="content">
-        <div >
-            <asp:Panel ID="Banner" runat="server" HorizontalAlign="Center" >
-                <img src="Images/banner.png" title="Banner" runat="server" height="175" width="750"/>
-            </asp:Panel>
-            <div id="divNav">
-                <ul class="navMenu">
-                    <li>
-                        <a href="Default.aspx">Home</a>
-                    </li>
-                    <li>
-                        <a href="Cartoons.aspx">Cartoons</a>
-                    </li>
-                    <li>
-                        <a href="About.aspx">About</a>
-                    </li>
-                    <li>
-                        <a href="Contact.aspx">Contact</a>
-                    </li>
-                </ul>
+    <div id="top"></div>
+    <div id="bottom">
+        <div id="content">
+            <div class="container">
+                <asp:Panel ID="Banner" runat="server" HorizontalAlign="Center" >
+                    <img id="imgBanner" src="Images/banner.png" title="Banner" runat="server" />
+                </asp:Panel>
+                <div id="divNav">
+                    <ul class="navMenu">
+                        <li>
+                            <a href="Default.aspx">Home</a>
+                        </li>
+                        <li>
+                            <a href="Cartoons.aspx">Cartoons</a>
+                        </li>
+                        <li>
+                            <a href="About.aspx">About</a>
+                        </li>
+                        <li>
+                            <a href="Contact.aspx">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <asp:ContentPlaceHolder ID="CenterContent" runat="server"></asp:ContentPlaceHolder>
-        <div class="footer">
-            <div class="leftFooter">
-                <ul>
-                    <li><a href="Default.aspx">Home</a></li>
-                    <li><a href="About.aspx">About</a></li>
-                    <li><a href="Contact.aspx">Contact</a></li>
-                    <li><a href="Cartoons.aspx">Cartoons</a></li>
-                    <li><a href="~/Admin/Default.aspx"</li>
-                </ul>
-            </div>
-            <div class="rightFooter">
-                <ul>
-                    <li><a href="http://www.cartoonworks.com">Cartoonworks</a></li>
-                    <li>Copyright - Cartoonworks 2015</li>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#" >Privacy Policy</a></li>
-                </ul>
+            <asp:ContentPlaceHolder ID="CenterContent" runat="server"></asp:ContentPlaceHolder>
+            <div class="footer">
+                <div class="leftFooter">
+                    <ul>
+                        <li><a href="Default.aspx">Home</a></li>
+                        <li><a href="About.aspx">About</a></li>
+                        <li><a href="Contact.aspx">Contact</a></li>
+                        <li><a href="Cartoons.aspx">Cartoons</a></li>
+                        <li><a href="~/Admin/Default.aspx"</li>
+                    </ul>
+                </div>
+                <div class="rightFooter">
+                    <ul>
+                        <li><a href="http://www.cartoonworks.com">Cartoonworks</a></li>
+                        <li>Copyright - Cartoonworks 2015</li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#" >Privacy Policy</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

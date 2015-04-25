@@ -85,6 +85,7 @@
     <Content Include="Images\Cartoons\B01.png" />
     <Content Include="Images\left-arrow.png" />
     <Content Include="Images\right-arrow.png" />
+    <Content Include="Scripts\Contact.css" />
     <Content Include="Scripts\dateTimePicker\jquery.datetimepicker.css" />
     <Content Include="Scripts\dateTimePicker\jquery.datetimepicker.js" />
     <Content Include="Scripts\dateTimePicker\jquery.js" />

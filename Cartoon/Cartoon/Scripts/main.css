@@ -1,14 +1,40 @@
 ﻿/*  Master page */
 
 body {
-    width: 800px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    background-color:#3B3738;
 }
-
+.container {
+    background-color:#3B3738;
+    padding-bottom:0.2em;
+}
+#imgBanner {
+    max-height:200px;
+    max-width:800px;
+}
+    .container img {
+        margin-left:0.5em;
+        margin-right:0.5em;
+        margin-top:0.5em;
+    }
+#top {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:-1;
+    height:20em;
+    background-color:#C63D0F
+}
+#bottom {
+    position:absolute;
+    top:0;
+}
 #content {
     padding: 1em 1em 1em 1em;
-    background-color: lightblue;
+    background-color: #FDF3E7;
 }
 
 
@@ -44,13 +70,16 @@ body {
             border-radius: 7%;
             text-align: center;
             text-decoration: none;
-            background-color: lightgreen;
+            color:white;
+            font-size:larger;                
+            background-color: #C63D0F;
         }
 
 #CartoonContent {
     text-align: center;
-    margin: 1em 0.5em;
-    border: 2px solid black;
+    margin-top: 0.5em;
+    border:4px solid #3B3738;
+    background-color:#FDF3E7;
 }
 
 /* Cartoon search widget*/
@@ -127,7 +156,7 @@ body {
 }
 
     #CartoonTitle p {
-        font-size: x-large;
+        font-size:xx-large;
     }
 
 #CartoonDate {
@@ -136,14 +165,13 @@ body {
 }
 
     #CartoonDate p {
-        font-size: small;
+        font-size:large;
         font-style: italic;
     }
 
 
 /* Cartoon content*/
 #CartoonImage {
-    border: 2px solid yellow;
 }
 
 #imgCartoon {
@@ -155,9 +183,10 @@ body {
 #Share {
     padding-bottom: 3em;
     margin-top: 0.3em;
-    margin-left:1em;
-    margin-right:1em;
-    background-color:red;
+    /*margin-left:1em;
+    margin-right:1em;*/
+    background-color:#7E8F7C;
+    border:4px solid #3B3738;
 }
 
     #Share ul {
@@ -166,11 +195,16 @@ body {
         padding-left:0;
     }
 
-        #Share ul li {
+        #Share ul li {  
             display: inline;
             margin-left: 0.5em;
             float: left;
         }
+
+            #Share ul li a {
+                text-decoration:none;
+                color:white;
+            }
 
             #Share ul li:first-child {
                 margin-left: 0.2em;
@@ -185,6 +219,7 @@ body {
 
     .footer ul {
         list-style: none;
+        
     }
 
         .footer ul li {
